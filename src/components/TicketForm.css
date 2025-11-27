@@ -1,0 +1,85 @@
+/* Full background */
+.ticket-form-container {
+  width: 100%;
+  padding: 40px 0;
+  background: #8ea9ff;
+  display: flex;
+  justify-content: center;
+}
+
+/* White card */
+.ticket-form-card {
+  width: 90%;
+  max-width: 1100px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* 2 section layout */
+.card-inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+/* Left title */
+.left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Right form */
+.ticket-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* Inputs */
+.ticket-grid input,
+.ticket-grid select,
+.ticket-grid textarea {
+  background: #111;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+}
+
+.ticket-grid textarea {
+  grid-column: span 2;
+}
+
+.label {
+  color: #111;
+  font-weight: 600;
+}
+
+.file-row {
+  grid-column: span 2;
+}
+
+/* Submit button */
+.submit-btn {
+  grid-column: span 2;
+  padding: 15px;
+  background: #2d5cff;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #1a47e6;
+}

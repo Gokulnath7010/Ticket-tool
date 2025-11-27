@@ -1,0 +1,159 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #8ea9ff;
+  color: #222;
+  line-height: 1.5;
+}
+
+
+.navbar {
+  width: 100%;
+  background: #ffffff;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2d5cff;
+}
+
+.navbar .links a {
+  margin-left: 25px;
+  color: #161616;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar .links a:hover {
+  color: #2d5cff;
+}
+
+
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 35px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Form Inputs */
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+  padding: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  background: #fafafa;
+  transition: 0.25s;
+}
+
+.form-grid input:focus,
+.form-grid textarea:focus,
+.form-grid select:focus {
+  border-color: #2d5cff;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(45, 92, 255, 0.15);
+}
+
+
+
+
+.primary {
+  grid-column: span 2;
+  padding: 14px;
+  background: #2d5cff;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary:hover {
+  background: #1a47e6;
+}
+
+.message {
+  margin-top: 15px;
+  padding: 12px;
+  background: #e8f1ff;
+  border-left: 5px solid #2d5cff;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+
+.ticket-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.ticket-table tr {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.ticket-table th {
+  background: none !important;
+  font-size: 15px;
+  color: #575757;
+  padding-bottom: 8px;
+}
+
+.ticket-table td {
+  padding: 14px 18px;
+  font-size: 15px;
+}
+
+.ticket-table tbody tr:hover {
+  transform: scale(1.01);
+}
+
+
+.btn {
+  padding: 8px 18px;
+  border-radius: 50px;
+  background: #2d5cff;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: #1a47e6;
+  transform: scale(1.08);
+}
+
+
+/* PRIORITY COLORS */
+.priority.high { color: #d90429; font-weight: bold; }
+.priority.medium { color: #f28705; font-weight: bold; }
+.priority.low { color: #2dbc53; font-weight: bold; }

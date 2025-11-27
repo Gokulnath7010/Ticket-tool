@@ -1,0 +1,55 @@
+/* DASHBOARD PAGE */
+.page {
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* VISUALIZE BUTTON */
+.dashboard-btn {
+  padding: 12px 28px;
+  background: #2d5cff;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.dashboard-btn:hover {
+  background: #1c3ed1;
+}
+
+/* CHART GRID */
+.chart-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.chart-grid-1 {
+  display: grid;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 25px;
+}
+
+.chart-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
